@@ -33,10 +33,14 @@
 
 
 
-아래는 관리자&회원가입html 창 예시입니다:  
+아래는 관리자&회원가입
+html 창 예시입니다
 
+###관리자 html
+<img width="1744" alt="스크린샷 2024-12-27 16 43 13" src="https://github.com/user-attachments/assets/5ae2214e-e5be-4f08-af00-85d0ee9f7b45" />
 
-<img width="709" alt="스크린샷 2024-12-27 14 16 17" src="https://github.com/user-attachments/assets/9a900ba1-18f8-49c1-a134-3117fe81e796" />
+###회원가입 html
+<img width="1744" alt="스크린샷 2024-12-27 16 45 45" src="https://github.com/user-attachments/assets/cf2f89d6-a47e-46f1-bd87-84edbcc269e5" />
 
 
 
@@ -53,6 +57,8 @@
 - **다크모드**: 클릭 시 색상 전환 가능
 - **가입완료**: 클릭 시 가입 완료 페이지로 전환되어 입력된 값 재차 확인 가능
 
+
+
 ---
 
 
@@ -67,7 +73,7 @@
 
    ```bash
 
-   git https://github.com/CHM0305/miniProject.git
+   git https://github.com/CHM0305/Project.git
 
    cd AdminPage
 
@@ -75,34 +81,22 @@
 
 
 
-2. Python을 설치합니다(버전 3.6 이상 권장).
+2. Python을 설치합니다(버전 3.6 이상 권장)/확장 프로그램에서 GO LIVE 설치.
 
 
 
 ### 애플리케이션 실행  
 
-Python으로 스크립트를 실행합니다:  
+원하는 html에 가서 GO LIVE 실행합니다:  
 
-```bash
-
-
-
-```
 
 
 
 ### 사용 예시  
 
-1. 새로운 작업을 추가합니다.  
-
-2. 작업 목록을 확인합니다.  
-
-3. 작업을 완료 처리하거나 삭제합니다.  
-
-4. 프로그램 종료 후에도 작업 데이터는 저장됩니다.  
-
-
-![todo](https://github.com/user-attachments/assets/12f83774-04cf-41db-b6a6-5eb32df4db11)
+1. 신규 상품 생성 및 확인이 가능하다
+2. 회원가입을 할 수 있다.
+3. 다크모드를 마음대로 실행 취소할 수 있다.
 
 ---
 
@@ -110,9 +104,9 @@ Python으로 스크립트를 실행합니다:
 
 ## 🔧 기술 스택  
 
-- **언어**: Python  
+- **언어**: JavaScript,JavaCss,Html 
 
-- **파일 형식**: JSON을 사용한 데이터 저장  
+- **파일 형식**: js, css, html을 사용한 데이터 저장  
 
 
 
@@ -126,13 +120,19 @@ Python으로 스크립트를 실행합니다:
 
 ```plaintext
 
-task_manager/
+AdminPage/
 
-├── task_manager.py  # 메인 스크립트
+├── AdminPage.html  # 관리자 페이지 파일
 
-├── tasks.json       # 데이터 저장 파일
+├── join.css       # 회원가입 스타일 파일
 
-└── README.md        # 프로젝트 문서
+├── join.html       # 회원가입 페이지 파일
+
+├── join.js      # 회원가입 기능 파일
+
+├── readme.md        # 프로젝트 문서
+
+└── welcome.html       # 회원가입 완료 파일
 
 ```
 
@@ -146,11 +146,11 @@ task_manager/
 
 
 
-1. **JSON 파일 기반 데이터 저장**: 작업 데이터를 `tasks.json` 파일에 저장하고 불러옵니다.  
+1. **html, js, css 파일 생성**: 각 파일에 맞는 코드 작성, 부트캠프 사이트, 챗GPT 참고하였다.  
 
-2. **동적 사용자 입력 처리**: 메뉴 옵션에 따라 작업 추가, 보기, 완료 처리, 삭제 등의 기능을 제공합니다.  
+2. **데이터 유효성 검사**: 작성한 값을 자동으로 검사해주어 경고창을 띄어 수정을 요구한다.  
 
-3. **에러 처리**: 잘못된 입력에 대해 적절한 오류 메시지를 출력해 사용자 경험을 향상시켰습니다.  
+3. **에러 처리**: 잘못된 입력에 대해 적절한 오류 메시지를 출력하여 입력한 값들의 동일한 패턴으로 입력되게 유도했다.
 
 
 
@@ -162,31 +162,15 @@ task_manager/
 
 
 
-- **개발자**: [Your Name]  
+- **개발자**:[최혜민] 
 
-    - CLI 기반 작업 관리 애플리케이션 설계 및 구현.  
+    - HTML,JS,CSS 설계 및 구현.  
 
-    - JSON을 이용한 데이터 영구 저장 구현.  
+    - 다크모드, 페이지간의 연결 기능 구현  
 
-    - 직관적인 메뉴 옵션 및 사용자 인터페이스 구성.  
-
-
-
----
+    - 경고창 출력 기능 구현 
 
 
 
-## 👨‍👩‍👧‍👦 개발자  
-
-
-
-- [Your Name](https://github.com/yourusername)  
-
-
-
----
-
-
-
-이 프로젝트는 Python과 JSON 데이터 관리를 학습하는 초보자 또는 간단한 오프라인 작업 관리 도구를 찾는 사용자에게 적합합니다. 🚀
+---🚀
 
