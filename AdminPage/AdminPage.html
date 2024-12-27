@@ -7,7 +7,15 @@
         <title>Admin Page</title>
         <style>
             /* 다크모드 토글 버튼을 오른쪽에 위치시킴 */
-
+            #darkModeToggle {
+                background-color: white;
+                color: black;
+                border: 1px solid #ccc;
+                position: absolute;  /* 절대 위치 지정 */
+                top: 10px;  /* 위에서 10px만큼 떨어지게 설정 */
+                right: 10px;  /* 오른쪽에서 10px만큼 떨어지게 설정 */
+                margin: 0;  /* 기본 마진 제거 */
+            }
 
             /* 다크모드일 때 토글 버튼의 배경색을 어두운 색으로 변경 */
             body.dark-mode #darkModeToggle {
