@@ -1,0 +1,136 @@
+/* 기본 라이트 모드 */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;  /* 오른쪽 정렬 */
+    align-items: flex-start;    /* 상단 정렬 */
+    padding: 10px;
+}
+
+/* 다크모드 */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* 다크모드 폼 스타일 */
+body.dark-mode form {
+    background-color: #333;
+    border-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* 다크모드 라벨 */
+body.dark-mode label {
+    color: #ddd;
+}
+
+/* 다크모드 입력 필드 */
+body.dark-mode input[type="text"],
+body.dark-mode input[type="password"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="tel"] {
+    background-color: #555;
+    color: white;
+    border: 1px solid #666;
+}
+
+/* 다크모드 버튼 */
+body.dark-mode button {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+body.dark-mode button:hover {
+    background-color: #666;
+}
+
+/* 다크모드 다크모드 버튼 스타일 */
+body.dark-mode #dark-mode-toggle {
+    background-color: #444;
+    color: white;
+    font-size: 14px; /* 버튼 크기 */
+    padding: 5px 10px;  /* 버튼 크기 */
+    border-radius: 5px;
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background-color: #555;
+}
+
+/* 기본 라이트 모드 버튼 */
+#dark-mode-toggle {
+    font-weight: bold;
+    padding: 5px 10px;  /* 버튼 크기 */
+    transition: background-color 0.3s;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #555;
+}
+
+/* 기본 폼 스타일 */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px 20px;  /* 세로로 길게 여백을 수정 */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 600px;  /* 세로 크기 */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+    width: 95%;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.gender {
+    margin-bottom: 15px;
+}
+
+.gender label:first-child {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.gender label:not(:first-child) {
+    display: inline-block;
+    margin-right: 1px;
+    font-size: 15px;
+}
+
+button {
+    display: block;
+    width: 15%;  /* 버튼 가로 길이 */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

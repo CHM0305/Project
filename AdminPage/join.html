@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="join.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJwKLx3q+V3kr7lc7na1QyBMbvYF1J6OUaD19bmYXYhStlTJO6mOmgauD0pr" crossorigin="anonymous">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <!-- 다크모드 토글 버튼 (오른쪽 정렬) -->
+        <button id="dark-mode-toggle" class="btn btn-secondary ms-auto">☀️</button>
+    </header>
+
+    <form id="form">
+        <h1>회원가입</h1>
+
+        <table class="table table-bordered">
+            <tr>
+                <td><strong>아이디</strong></td>
+                <td><input type="text" id="username" name="username" placeholder="아이디" required></td>
+            </tr>
+            <tr>
+                <td><strong>비밀번호</strong></td>
+                <td>
+                    <input type="password" id="password" name="password" placeholder="비밀번호" required>
+                    <small style="font-size: 13px;">* 영문, 숫자, 특수문자를 포함한 8자 이상 30미만이어야 합니다.</small>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>비밀번호 확인</strong></td>
+                <td><input type="password" id="passwordCheck" name="passwordCheck" placeholder="비밀번호 확인" required></td>
+            </tr>
+            <tr>
+                <td><strong>이름</strong></td>
+                <td><input type="text" id="name" name="name" placeholder="사용자 이름" required></td>
+            </tr>
+            <tr>
+                <td><strong>전화번호</strong></td>
+                <td><input type="tel" id="phone" name="phone" placeholder="휴대전화 번호" required></td>
+            </tr>
+            <tr>
+                <td><strong>성별</strong></td>
+                <td>
+                    <input type="radio" name="gender" value="남자" required> 남자
+                    <input type="radio" name="gender" value="여자"> 여자
+                </td>
+            </tr>
+            <tr>
+                <td><strong>이메일</strong></td>
+                <td><input type="email" id="email" name="email" placeholder="이메일" required></td>
+            </tr>
+        </table>
+
+        <!-- 가입 버튼 -->
+        <button type="submit" class="btn btn-primary">가입</button>
+    </form>
+
+    <!-- 부트스트랩 JavaScript 포함 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0Rp4by+Mkj8e+tsF5zD4Z4Z5kJ4J1M77yyHg6qa9RChfjIbJ" crossorigin="anonymous"></script>
+    <script src="join.js"></script>
+</body>
+</html>
