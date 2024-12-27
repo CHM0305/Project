@@ -121,7 +121,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
 
 button {
     display: block;
-    width: 15%;  /* 버튼 가로 길이 */
+    width: 10% auto;  /* 버튼 가로 길이 */
     padding: 10px;
     background-color: #007bff;
     color: white;
